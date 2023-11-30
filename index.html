@@ -10,9 +10,11 @@
 
     <script>
       document.getElementById("askButton").addEventListener("click", () => {
-        fetch("http://localhost:3000/ask?question=hello")
+        fetch("http://askmeapi.app:3000/ask?question=hello")
           .then((response) => response.json())
           .then((data) => {
+            console.log("data", data);
+
             document.getElementById("answer").textContent = data.answer;
           })
           .catch((error) => console.error("Error:", error));

@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-fetch("http://localhost:3000/ask?question=hello")
+fetch("http://askmeapi.app/ask?question=hello")
   .then((response) => response.json())
   .then((data) => {
     console.log("Answer:", data.answer);
