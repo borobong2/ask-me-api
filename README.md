@@ -4,7 +4,10 @@
 Ask Me API는 사용자에게 재미있는 운세 메시지를 제공하는 간단한 API입니다. 이 API는 `/ask` 엔드포인트를 통해 접근할 수 있습니다.
 
 ## How to Use
-API를 사용하는 방법은 매우 간단합니다. HTTP GET 요청을 `/ask` 엔드포인트로 보내면 됩니다.
+```javascript
+  fetch(`http://askmeapi.app/ask?question=hello`)
+```
+HTTP GET 요청을 `/ask` 엔드포인트로 보내면 됩니다.
 
 ### ask
 이 요청을 보내면, API는 JSON 형식의 응답을 반환합니다. 응답은 다음과 같은 형식입니다:
