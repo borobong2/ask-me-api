@@ -5,7 +5,7 @@ Ask Me API는 사용자에게 재미있는 운세 메시지를 제공하는 간�
 
 ## How to Use
 ```javascript
-  fetch(`http://askmeapi.app/ask?question=hello`)
+fetch(`http://askmeapi.app/ask?question=hello`)
 ```
 HTTP GET 요청을 `/ask` 엔드포인트로 보내면 됩니다.
 
