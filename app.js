@@ -11,6 +11,12 @@ app.get("/ask", (req, res) => {
     answer = "Hello there!";
   } else if (question.toLowerCase().includes("time")) {
     answer = `The current time is ${new Date().toLocaleTimeString()}.`;
+  } else if (question.toLowerCase().includes("date")) {
+    answer = `Today's date is ${new Date().toLocaleDateString()}.`;
+  } else if (question.toLowerCase().includes("how are you")) {
+    answer = "I'm an AI, so I don't have feelings, but thank you for asking!";
+  } else {
+    answer = "I'm sorry, I didn't understand your question.";
   }
   res.send({ question, answer });
 });
